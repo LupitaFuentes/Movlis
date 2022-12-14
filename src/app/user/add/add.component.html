@@ -1,1 +1,18 @@
-<p>add works!</p>
+<div class="container">
+	<p>Register User</p>
+	<div class="row">
+		<div class="col-sm-6">
+			<form>
+				<div class="mb-3">
+					<label class="form-label">Name</label>
+					<input [(ngModel)]="user.name" type="text" class="form-control" name="name">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Password</label>
+					<input [(ngModel)]="user.pass" type="password" class="form-control" name="pass">
+				</div>
+                <button (click)="add()" class="btn btn-primary">Check in</button>
+			</form>
+		</div>
+	</div>
+</div>
